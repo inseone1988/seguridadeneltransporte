@@ -1,0 +1,102 @@
+.bg-dsc {
+    background-color: rgb(255, 205, 0);
+}
+
+.text-dsc {
+    color: #d40511;
+}
+
+.profile-wrapper {
+    padding-top: 50px;
+    height: 300px;
+}
+
+.p-photo {
+    background-color: #5a6268;
+    text-align: center;
+    height: 74px;
+    width: 70px;
+    border-radius: 38px;
+    /* margin-left: 10px; */
+    padding-left: 10px;
+}
+
+.p-name {
+    font-weight: bold;
+}
+
+.s-value {
+    border-bottom: solid 1px gainsboro;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.autocomplete-suggestions {
+    border: 1px solid #999;
+    background: #FFF;
+    overflow: auto;
+}
+
+.autocomplete-suggestion {
+    padding: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.autocomplete-selected {
+    background: #F0F0F0;
+}
+
+.autocomplete-suggestions strong {
+    font-weight: normal;
+    color: #3399FF;
+}
+
+.autocomplete-group {
+    padding: 2px 5px;
+}
+
+.autocomplete-group strong {
+    display: block;
+    border-bottom: 1px solid #000;
+}
+
+.photo-btn{
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+
+.lastsaved{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.cert-count{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4fb131;
+}
+
+.cert-count-pending{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff253d;
+}
+
+.card-counter-sm{
+    text-align: center;
+    color: darkkhaki;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.card-header-centered{
+    text-align: center;
+}
+
+.chart-wrapper{
+    height: 250px !important;
+}

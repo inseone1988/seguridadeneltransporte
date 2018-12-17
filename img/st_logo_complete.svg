@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256px"
+   height="256px"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="SVGRoot"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="st_logo_complete.svg">
+  <title
+     id="title6417">DHL_DSC_Supply_Chain_Security_Logo</title>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="98.710678"
+     inkscape:cy="129.46447"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:grid-bbox="true"
+     inkscape:pagecheckerboard="true" />
+  <defs
+     id="defs5809">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter2736">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2726" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2728" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur2730" />
+      <feOffset
+         dx="4.2"
+         dy="1.3"
+         result="offset"
+         id="feOffset2732" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2734" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter2748">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2738" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2740" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur2742" />
+      <feOffset
+         dx="4.2"
+         dy="1.3"
+         result="offset"
+         id="feOffset2744" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2746" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata5812">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>DHL_DSC_Supply_Chain_Security_Logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       style="opacity:1;fill:#ffcd00;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter2748)"
+       d="M 129.44922,3.195981 A 94.185641,93.394245 0 0 0 35.263672,96.59018 94.185641,93.394245 0 0 0 129.44922,189.98438 94.185641,93.394245 0 0 0 223.63477,96.59018 94.185641,93.394245 0 0 0 129.44922,3.195981 Z m -0.17586,5.93587 c 23.1688,0 45.38869,9.103002 61.7715,25.308296 16.38281,16.205303 25.58698,38.184603 25.58698,61.102353 0,11.45888 -0.54982,18.88584 -4.89862,29.271 -11.22977,0.59335 -138.43922,0.32555 -163.16861,0.69895 -4.348796,-10.38515 -6.649724,-18.51107 -6.649724,-29.96995 0,-22.91776 9.204169,-44.89705 25.586982,-61.102353 C 83.88467,18.234853 106.10457,9.131851 129.27336,9.131851 Z"
+       id="path5761"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:#b6ae92;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter2736)"
+       d="m 106.36966,33.142307 c 3.72472,-0.502185 10.16355,-4.276055 14.14334,-6.932283 6.49566,-4.335408 12.61177,-8.699386 15.45748,-7.477299 7.86289,3.376727 11.37645,4.417404 17.40629,7.07093 3.01491,1.32676 8.24154,-3.954234 17.74244,-4.877872 3.20443,-0.31152 -1.25467,13.947783 -10.23057,31.845057 -8.9759,17.89728 -22.4686,39.43255 -37.3314,53.67297 -7.03958,6.84257 -22.62983,21.09957 -27.07027,17.14648 -3.98202,-3.545 -5.06407,-5.20018 -7.18541,-10.85595 -2.90691,-7.75021 -2.56716,-14.18531 -2.81922,-17.87526 -1.06672,-15.61566 0.76453,-34.27094 7.35763,-54.31054 4.38579,-13.330572 8.36687,-6.480249 12.52969,-7.406233 z"
+       id="path5774"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssscssssc" />
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 98.51698,120.66015 c 0.0527,0.0106 0.10355,0.0327 0.15658,0.0409 4.0044,0.6191 9.86255,-4.4973 13.27848,-7.65752 3.36517,-3.11327 8.16181,-7.49983 11.35424,-11.29354 10.71393,-10.57631 22.8399,-29.88696 31.85493,-46.64311 4.50752,-8.37807 10.57548,-21.002668 12.96218,-26.6924 1.87453,-5.492268 0.9327,-5.504363 -3.93275,-3.391175 -2.98183,1.105297 -9.04959,4.033901 -10.47505,3.326737 -5.5287,-2.742774 -16.89424,-7.692093 -20.17362,-7.99142 z"
+       id="path5795"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccscsccscc" />
+    <path
+       style="opacity:1;fill:#fecc05;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 98.51698,120.66015 133.54197,20.358599 c -0.005,-3.11e-4 -0.012,-0.0031 -0.0161,-0.0031 -2.13275,0.549996 -3.4897,1.889395 -6.54208,3.736118 -1.5521,1.030127 -3.59916,2.300546 -5.62172,3.526834 -2.02256,1.22628 -4.02062,2.408435 -5.47476,3.262034 -1.0942,0.682982 -2.40696,1.400431 -4.32844,2.264573 -1.35853,0.705634 -4.14347,1.913258 -6.28072,1.757234 -2.08878,-0.152484 -2.65515,-0.730407 -2.65515,-0.730407 -1.82006,-0.463511 -2.16261,-0.567441 -3.37652,-0.151105 -1.21394,0.416343 -1.96727,2.524263 -4.04087,8.51387 -6.23439,18.00815 -7.36786,32.07397 -7.62534,46.14031 -0.20703,11.30975 2.12736,19.79771 3.70282,23.13779 0.37098,0.78652 3.30878,8.05995 7.23387,8.84762 z"
+       id="path5774-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccsccsccssccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.87926674px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32198164"
+       x="59.542694"
+       y="143.13139"
+       id="text5799"
+       transform="scale(1.0114817,0.98864864)"><tspan
+         sodipodi:role="line"
+         id="tspan5797"
+         x="59.542694"
+         y="143.13139"
+         style="stroke-width:0.32198164">Supply Chain Security</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.09572315px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4a4532;fill-opacity:1;stroke:none;stroke-width:0.27739307"
+       x="89.828651"
+       y="149.92613"
+       id="text5803"
+       transform="scale(0.97357978,1.0271372)"><tspan
+         sodipodi:role="line"
+         id="tspan5801"
+         x="89.828651"
+         y="149.92613"
+         style="fill:#4a4532;fill-opacity:1;stroke-width:0.27739307">Shielding Assets</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.77645063px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4a4532;fill-opacity:1;stroke:none;stroke-width:0.19441129"
+       x="99.732483"
+       y="158.72076"
+       id="text5807"
+       transform="scale(0.95451096,1.0476569)"><tspan
+         sodipodi:role="line"
+         id="tspan5805"
+         x="99.732483"
+         y="158.72076"
+         style="fill:#4a4532;fill-opacity:1;stroke-width:0.19441129">Delivering Solutions</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#d50029;stroke-width:1.3357079"
+       d="m 87.313891,212.57259 c -1.025824,1.38914 -2.742209,3.8041 -3.786732,5.21461 -0.530276,0.71727 -1.487979,2.01959 1.686999,2.01959 3.359305,0 16.716382,0 16.716382,0 0,0 2.69413,-3.66519 4.95281,-6.73064 3.07213,-4.17008 0.2658,-12.84684 -10.717723,-12.84684 -9.83081,0 -43.255566,0 -43.255566,0 l -7.5,10.19012 c 0,0 38.881123,0 40.87667,0 2.063669,0 2.035619,0.7854 1.02716,2.15316 z m -12.280499,9.748 c -3.174978,0 -2.217275,-1.30499 -1.686999,-2.02226 1.044523,-1.41051 2.788958,-3.80009 3.814782,-5.18923 1.009795,-1.36776 1.036509,-2.15316 -1.029831,-2.15316 -1.994212,0 -18.694569,0 -18.694569,0 L 42.373997,233.427 c 0,0 26.902494,0 36.733304,0 12.132235,0 18.88691,-8.252 20.969279,-11.10508 0,-0.001 -21.685218,-0.001 -25.043188,-0.001 z M 98.929207,233.427 h 21.548973 l 8.16919,-11.10775 -21.5463,0.003 c -0.007,-0.001 -8.171863,11.10508 -8.171863,11.10508 z m 55.598843,-33.19769 -8.26536,11.22663 h -9.6171 l 8.26136,-11.22663 h -21.5423 l -14.41229,19.57748 h 52.70703 l 14.40829,-19.57748 z M 130.09528,233.427 h 21.54096 l 8.1732,-11.10508 h -21.54096 c -0.008,-0.001 -8.1732,11.10508 -8.1732,11.10508 z M 11.626,226.70171 v 2.35886 h 30.010686 l 1.733749,-2.35886 z m 34.97017,-4.38112 H 11.626 v 2.35619 H 44.858414 Z M 11.626,233.427 h 26.795637 l 1.725735,-2.3455 H 11.626 Z m 203.12378,-4.36776 H 246.374 v -2.35887 h -29.8878 z m -3.21238,4.36776 h 34.8366 v -2.3455 h -33.1122 z m 8.16919,-11.10641 -1.73241,2.35886 H 246.374 v -2.35886 z m -28.21549,-2.5138 14.41095,-19.57748 h -22.81523 c -0.008,0 -14.42164,19.57748 -14.42164,19.57748 z m -24.6732,2.5138 c 0,0 -1.5748,2.15182 -2.34016,3.18833 -2.70481,3.6545 -0.31256,7.91808 8.51647,7.91808 10.19947,0 34.59617,0 34.59617,0 l 8.1732,-11.10508 H 166.8179 Z"
+       id="path4" />
+  </g>
+</svg>

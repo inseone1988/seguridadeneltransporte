@@ -1,0 +1,8 @@
+{
+    "require": {
+        "catfan/medoo": "^1.6",
+        "delight-im/file-upload": "^1.2",
+        "verot/class.upload.php": "dev-master",
+        "delight-im/auth": "^8.1"
+    }
+}
