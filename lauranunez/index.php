@@ -119,7 +119,7 @@
                         <div class="card">
                             <div class="card-header header-wrapper">
                                 <h3 class="">Certificaciones pendientes</h3>
-                                <button class="btn btn-sm mb-2" style="margin-bottom: 5px;" onclick="testing()">
+                                <button class="btn btn-sm mb-2" style="margin-bottom: 5px;" onclick="modalSolPerson()">
                                     <span class="fa fa-plus"></span>
                                 </button>
                             </div>
@@ -174,164 +174,33 @@
 
 <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
 <script src="/seguridadeneltransporte/assetsbs3/js/paper-dashboard.js"></script>
+<script src="/node_modules/"></script>
 <script src="/seguridadeneltransporte/utils/formify.js"></script>
-
+<script src="/seguridadeneltransporte/js/jquery.autocomplete.js"></script>
+<script src="/seguridadeneltransporte/utils/modals.js"></script>
 <script>
     $(document).ready(function () {
     })
 
-    function testing() {
-        var id = moment().format("x")
-        var formdata = {
-            formattr: {
-                "id": id
+    function saveSchedule(data){
+
+    }
+
+    function saveSolictante(data){
+        $.ajax({
+            url:"requesthandler.php",
+            type : "POST",
+            dataType : "JSON",
+            data : {
+                "function":"",
+                "data":data
             },
-            onSubmit: function (caller) {
-                console.log(caller)
-            },
-            fields: [
-                {
-                    colsize: "col-md-12",
-                    type: "input",
-                    attributes: {"placeholder": "Nombre del solicitante","name":"sample_field"},
-                    style: {},
-                    class: "form-control-sm",
-                    events: {
-                        onClick: function () {
+            success : function(r){
+                if (r.success){
 
-                        },
-                        onChange: function () {
-
-                        }
-                    }
-                },
-                {
-                    colsize: "col-md-12 mt-2",
-                    type: "input",
-                    attributes: {"placeholder": "Area solicitante","name":"sample_field"},
-                    style: {},
-                    class: "form-control-sm",
-                    events: {
-                        onClick: function () {
-
-                        },
-                        onChange: function () {
-
-                        }
-                    }
-                },
-                {
-                    colsize: "col-md-12 mt-2",
-                    type: "input",
-                    attributes: {"placeholder": "RazonSocial / Nombre comercial","name":"sample_field"},
-                    style: {},
-                    class: "form-control-sm",
-                    events: {
-                        onClick: function () {
-
-                        },
-                        onChange: function () {
-
-                        }
-                    }
-                }, {
-                    colsize: "col-md-12 mt-2",
-                    type: "textarea",
-                    attributes: {"placeholder": "Direccion","name":"sample_field1"},
-                    style: {},
-                    class: "form-control-sm bg-light",
-                    events: {
-                        onClick: function () {
-
-                        },
-                        onChange: function () {
-
-                        }
-                    }
-                }, {
-                    colsize: "col-md-6 mt-2",
-                    type: "input",
-                    attributes: {"placeholder": "Persona de contacto","name":"sample_field2"},
-                    style: {},
-                    class: "form-control-sm bg-light",
-                    events: {
-                        onClick: function () {
-
-                        },
-                        onChange: function () {
-
-                        }
-                    }
-                }, {
-                    colsize: "col-md-6 mt-2",
-                    type: "input",
-                    attributes: {"placeholder": "Telefono de contacto","name":"sample_field2"},
-                    style: {},
-                    class: "form-control-sm bg-light",
-                    events: {
-                        onClick: function () {
-
-                        },
-                        onChange: function () {
-
-                        }
-                    }
-                }, {
-                    colsize: "col-md-6 mt-2",
-                    type: "input",
-                    attributes: {"placeholder": "Correo Electronico","name":"sample_field2"},
-                    style: {},
-                    class: "form-control-sm bg-light",
-                    events: {
-                        onClick: function () {
-
-                        },
-                        onChange: function () {
-
-                        }
-                    }
-                }, {
-                    colsize: "col-md-6 mt-2",
-                    type: "input",
-                    attributes: {"placeholder": "Persona de contacto","name":"sample_field2"},
-                    style: {},
-                    class: "form-control-sm bg-light",
-                    events: {
-                        onClick: function () {
-
-                        },
-                        onChange: function () {
-
-                        }
-                    }
-                }, {
-                    colsize: "col-md-12 mt-2",
-                    type: "input",
-                    attributes: {"placeholder": "Motivo del cambio de razon social","name":"sample_field2"},
-                    style: {},
-                    class: "form-control-sm bg-light",
-                    events: {
-                        onClick: function () {
-
-                        },
-                        onChange: function () {
-
-                        }
-                    }
                 }
-            ]
-        };
-        var modtestop = {};
-        modtestop.id = id;
-        modtestop.title = "Solicitud de certificacion";
-        modtestop.modalbody = formify(formdata);
-        modtestop.events = {
-            onClick: function (formid) {
-                console.log(mapForm($("#"+formid).attr("id")));
             }
-        };
-        var modal = modalify(modtestop);
-        modal.modal("show");
+        });
     }
 </script>
 

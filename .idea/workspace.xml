@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70bfdc14-d0ad-4edf-8692-5e5e38859ae7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/formify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/modals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lauranunez/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/lauranunez/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/formify.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/formify.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,23 +83,10 @@
                 <file pinned="false" current-in-tab="true">
                   <entry file="file://$PROJECT_DIR$/lauranunez/index.php">
                     <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="418">
-                        <caret line="208" column="44" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
-                        <caret line="223" column="44" selection-start-line="223" selection-start-column="44" selection-end-line="223" selection-end-column="44" />
+                      <state relative-caret-position="469">
+                        <caret line="199" selection-start-line="199" selection-end-line="199" />
                         <folding>
                           <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                        </folding>
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-                <file pinned="false" current-in-tab="false">
-                  <entry file="file://$PROJECT_DIR$/utils/formify.js">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="546">
-                        <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-                        <folding>
-                          <element signature="n#!!doc" expanded="true" />
                         </folding>
                       </state>
                     </provider>
@@ -108,20 +95,57 @@
               </leaf>
             </split-first>
             <split-second>
-              <leaf>
-                <file pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/utils/formify.js">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="404">
-                        <caret line="41" column="97" selection-start-line="41" selection-start-column="97" selection-end-line="41" selection-end-column="97" />
-                        <folding>
-                          <element signature="n#!!doc" expanded="true" />
-                        </folding>
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
+              <splitter split-orientation="vertical" split-proportion="0.5">
+                <split-first>
+                  <leaf>
+                    <file pinned="false" current-in-tab="false">
+                      <entry file="file://$PROJECT_DIR$/utils/formify.js">
+                        <provider selected="true" editor-type-id="text-editor">
+                          <state relative-caret-position="159">
+                            <caret line="101" column="20" lean-forward="true" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+                            <folding>
+                              <element signature="n#!!doc" expanded="true" />
+                            </folding>
+                          </state>
+                        </provider>
+                      </entry>
+                    </file>
+                    <file pinned="false" current-in-tab="true">
+                      <entry file="file://$PROJECT_DIR$/utils/modals.js">
+                        <provider selected="true" editor-type-id="text-editor">
+                          <state relative-caret-position="138">
+                            <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+                            <folding>
+                              <element signature="e#99#130#0" />
+                              <element signature="e#149#173#0" />
+                              <element signature="e#624#1082#0" />
+                              <element signature="e#1096#1554#0" />
+                              <element signature="e#1568#2032#0" />
+                              <element signature="e#184#208#0" />
+                            </folding>
+                          </state>
+                        </provider>
+                      </entry>
+                    </file>
+                  </leaf>
+                </split-first>
+                <split-second>
+                  <leaf>
+                    <file pinned="false" current-in-tab="true">
+                      <entry file="file://$PROJECT_DIR$/utils/formify.js">
+                        <provider selected="true" editor-type-id="text-editor">
+                          <state relative-caret-position="16">
+                            <caret line="88" column="130" selection-start-line="88" selection-start-column="130" selection-end-line="88" selection-end-column="130" />
+                            <folding>
+                              <element signature="n#!!doc" expanded="true" />
+                            </folding>
+                          </state>
+                        </provider>
+                      </entry>
+                    </file>
+                  </leaf>
+                </split-second>
+              </splitter>
             </split-second>
           </splitter>
         </state>
@@ -150,8 +174,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="14" />
-          <entry key="html" value="13" />
-          <entry key="js" value="14" />
+          <entry key="html" value="14" />
+          <entry key="js" value="17" />
           <entry key="map" value="1" />
           <entry key="php" value="31" />
           <entry key="sql" value="2" />
@@ -161,8 +185,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="14" />
-          <entry key="HTML" value="13" />
-          <entry key="JavaScript" value="14" />
+          <entry key="HTML" value="14" />
+          <entry key="JavaScript" value="17" />
           <entry key="PHP" value="31" />
           <entry key="Scratch" value="2" />
           <entry key="SourceMap" value="1" />
@@ -172,18 +196,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="593" />
-          <entry key="html" value="367" />
-          <entry key="js" value="4635" />
-          <entry key="php" value="36610" />
+          <entry key="html" value="502" />
+          <entry key="js" value="6757" />
+          <entry key="php" value="37156" />
           <entry key="txt" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="594" />
-          <entry key="HTML" value="391" />
-          <entry key="JavaScript" value="4635" />
-          <entry key="PHP" value="36585" />
+          <entry key="HTML" value="526" />
+          <entry key="JavaScript" value="6757" />
+          <entry key="PHP" value="37131" />
           <entry key="PLAIN_TEXT" value="41" />
         </counts>
       </usages-collector>
@@ -193,11 +217,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dashboard.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+                <state relative-caret-position="-8114">
+                  <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/utils/template.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="311">
+                  <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+                  <folding>
+                    <element signature="e#1077#1084#1" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -220,7 +256,7 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js/chartsample.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="240">
+                    <state relative-caret-position="126">
                       <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
                     </state>
                   </provider>
@@ -259,12 +295,12 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>name</find>
       <find>Enlace</find>
       <find>ubiA</find>
       <find>coordenadas del even</find>
@@ -294,6 +330,7 @@
       <find>savesinister</find>
       <find>samplecha</find>
       <find>http://www.creative-tim.com</find>
+      <find>testing</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -329,8 +366,10 @@
         <option value="$USER_HOME$/Downloads/paper-dashboard-html-v1.2.1/paper-dashboard-html-v1.2.1/dashboard.html" />
         <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/utils/template.html" />
         <option value="$PROJECT_DIR$/utils/formify.js" />
         <option value="$PROJECT_DIR$/lauranunez/index.php" />
+        <option value="$PROJECT_DIR$/utils/modals.js" />
       </list>
     </option>
   </component>
@@ -373,7 +412,9 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -400,6 +441,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/paper-dashboard-html-v1.2.1/paper-dashboard-html-v1.2.1/dashboard.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -451,12 +493,12 @@
       <workItem from="1544740006070" duration="1868000" />
       <workItem from="1544799865762" duration="1719000" />
       <workItem from="1544802351547" duration="1320000" />
-      <workItem from="1545059905688" duration="21316000" />
+      <workItem from="1545059905688" duration="35674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213375000" />
+    <option name="totallyTimeSpent" value="227733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1362" y="-4" width="1374" height="776" extended-state="6" />
@@ -464,7 +506,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.27265862" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.27265862" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
@@ -489,6 +531,18 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/utils/modals.js</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
@@ -622,7 +676,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/chartsample.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="126">
           <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
         </state>
       </provider>
@@ -657,13 +711,6 @@
     <entry file="file://C:/UwAmp/www/seguridadeneltransporte/assets/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -671,23 +718,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8114">
+          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/formify.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        <state relative-caret-position="159">
+          <caret line="101" column="20" lean-forward="true" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+          <folding>
+            <element signature="e#1077#1084#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lauranunez/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="208" column="44" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
-          <caret line="223" column="44" selection-start-line="223" selection-start-column="44" selection-end-line="223" selection-end-column="44" />
+        <state relative-caret-position="469">
+          <caret line="199" selection-start-line="199" selection-end-line="199" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/modals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+          <folding>
+            <element signature="e#99#130#0" />
+            <element signature="e#149#173#0" />
+            <element signature="e#624#1082#0" />
+            <element signature="e#1096#1554#0" />
+            <element signature="e#1568#2032#0" />
+            <element signature="e#184#208#0" />
           </folding>
         </state>
       </provider>

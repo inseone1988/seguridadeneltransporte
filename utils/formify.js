@@ -17,18 +17,38 @@ function formify(options) {
         var field = options.fields[i];
         var col = $(document.createElement("div")).addClass(field.colsize !== undefined ? field.colsize : "col");
         var input = defineInput(field.type);
+        if (field.type === "select"){
+            for (var i = 0; i < field.selectOptions.length;i++){
+                $.each(field.selectOptions,function(index,value){
+                    var option = $(document.createElement("options")).attr("value",value.value).text(value.data);
+                });
+            }
+        }
         input.attr(field.attributes);
         input.css(field.style);
         input.addClass(field.class);
         input.on("click",field.events.onClick);
         input.on("change",field.events.onChange);
+        if (field.isAutocomplete) {
+            input.autocomplete(field.autocompleteOptions);
+        }
         col.append(input);
         wrapper.append(col);
     }
     return form.append(wrapper);
 }
 
-function defineInput(type) {
+function formifyDefaultOptions(){
+    var form = {
+        formattr : {},
+        onSubmit : function(){},
+        fields : [
+
+        ]
+    };
+}
+
+function defineInput(type,options) {
     switch (type) {
         case "input":
             return $(document.createElement("input")).attr("type","text").addClass("form-control");
@@ -41,6 +61,13 @@ function defineInput(type) {
         case "textarea":
             return $(document.createElement("textarea")).attr("rows",3).addClass("form-control");
         case "switch":
+            break;
+        case "input-group":
+            switch (options.type) {
+                case "text":
+
+            }
+
             break;
     }
 }
@@ -59,8 +86,8 @@ function modalify(options) {
     modalheader.append(modalheadertitle);
     var modalbody = $(document.createElement("div")).addClass("modal-body").append(options.modalbody);
     var modalfooter = $(document.createElement("div")).addClass("modal-footer")
-        .append($(document.createElement("button")).addClass("btn btn-default").data("dismiss", "modal").text("Guardar").on("click", function () {
-            options.events.onClick(options.id)
+        .append($(document.createElement("button")).addClass("btn btn-default").data("dismiss", "modal").text(options.positiveText).on("click", function () {
+            options.events.onClick()
         }));
     modalcontent.append(modalheader).append(modalbody).append(modalfooter)
     dialog.append(modalcontent);
