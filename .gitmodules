@@ -1,0 +1,2 @@
+[submodule "vendor/verot/class.upload.php"]
+	url = https://github.com/verot/class.upload.php.git

@@ -120,3 +120,11 @@
     margin-top: 1rem;
 }
 
+.bg-light-gray{
+    background-color: #f3f3f3;
+}
+
+.map{
+    height: 300px !important;
+}
+

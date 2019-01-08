@@ -11,8 +11,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="assetsbs3/img/apple-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assetsbs3/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <title>Paper Dashboard by Creative Tim</title>
@@ -22,19 +22,19 @@
 
 
     <!-- Bootstrap core CSS     -->
-    <link href="/seguridadeneltransporte/assetsbs3/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/seguridadeneltransporte/assets/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Animation library for notifications   -->
-    <link href="/seguridadeneltransporte/assetsbs3/css/animate.min.css" rel="stylesheet"/>
+    <link href="/seguridadeneltransporte/assets/css/animate.min.css" rel="stylesheet"/>
 
     <!--  Paper Dashboard core CSS    -->
-    <link href="/seguridadeneltransporte/assetsbs3/css/paper-dashboard.css" rel="stylesheet"/>
+    <link href="/seguridadeneltransporte/assets/css/paper-dashboard.css" rel="stylesheet"/>
 
 
     <!--  Fonts and icons     -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
-    <link href="/seguridadeneltransporte/assetsbs3/css/themify-icons.css" rel="stylesheet">
+    <link href="/seguridadeneltransporte/assets/css/themify-icons.css" rel="stylesheet">
     <link href="/seguridadeneltransporte/css/styles.css" rel="stylesheet"/>
 
 </head>
@@ -66,125 +66,60 @@
         </div>
     </div>
 
-    <div class="main-panel">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar bar1"></span>
-                        <span class="icon-bar bar2"></span>
-                        <span class="icon-bar bar3"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Dashboard</a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-panel"></i>
-                                <p>Stats</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-bell"></i>
-                                <p class="notification">5</p>
-                                <p>Notifications</p>
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ti-settings"></i>
-                                <p>Settings</p>
-                            </a>
-                        </li>
-                    </ul>
 
-                </div>
+</div>
+<!--START MODALS -->
+<div id="mmodal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-        </nav>
-        <div class="content">
-            <div class="container-fluid">
+            <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header header-wrapper">
-                                <h3 class="">Certificaciones pendientes</h3>
-                                <button class="btn btn-sm mb-2" style="margin-bottom: 5px;" onclick="modalSolPerson()">
-                                    <span class="fa fa-plus"></span>
-                                </button>
-                            </div>
-                            <div class="card-body">
-                                <table class="table table-sm table-bordered">
-                                    <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Razon social</th>
-                                        <th>Direcccion</th>
-                                        <th>Persona de contacto</th>
-                                        <th>Numero de contacto</th>
-                                        <th>Correo electronico</th>
-                                        <th>Sector</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                    </thead>
-                                </table>
-                            </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                Hello
+                            </span>
+                            <input type="text" class="form-control"/>
                         </div>
                     </div>
+                    <div class="col-md-6"></div>
                 </div>
             </div>
-        </div>
-
-
-        <footer class="footer">
-            <div class="container-fluid">
-
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="buton" class="btn btn-primary">Save Changes</button>
             </div>
-        </footer>
-
+        </div>
     </div>
 </div>
-
-
 </body>
-
 <!--   Core JS Files   -->
-<script src="/seguridadeneltransporte/assetsbs3/js/jquery.min.js" type="text/javascript"></script>
-<script src="/seguridadeneltransporte/assetsbs3/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/seguridadeneltransporte/assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="/seguridadeneltransporte/assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 <!--  Checkbox, Radio & Switch Plugins -->
-<script src="/seguridadeneltransporte/assetsbs3/js/bootstrap-checkbox-radio.js"></script>
+<script src="/seguridadeneltransporte/assets/js/bootstrap-checkbox-radio.js"></script>
 
 <!--  Charts Plugin -->
-<script src="/seguridadeneltransporte/assetsbs3/js/chartist.min.js"></script>
+<script src="/seguridadeneltransporte/assets/js/chartist.min.js"></script>
 
 <!--  Notifications Plugin    -->
-<script src="/seguridadeneltransporte/assetsbs3/js/bootstrap-notify.js"></script>
+<script src="/seguridadeneltransporte/assets/js/bootstrap-notify.js"></script>
 <script src="/seguridadeneltransporte/node_modules/moment/moment.js"></script>
 
 <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
-<script src="/seguridadeneltransporte/assetsbs3/js/paper-dashboard.js"></script>
-<script src="/node_modules/"></script>
-<script src="/seguridadeneltransporte/utils/formify.js"></script>
-<script src="/seguridadeneltransporte/js/jquery.autocomplete.js"></script>
-<script src="/seguridadeneltransporte/utils/modals.js"></script>
+<script src="/seguridadeneltransporte/assets/js/paper-dashboard.js"></script>
 <script>
     $(document).ready(function () {
+        $("#mmodal").modal("show");
     })
 
-    function saveSchedule(data){
-
-    }
 
     function saveSolictante(data){
         $.ajax({

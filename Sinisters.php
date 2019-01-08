@@ -88,6 +88,126 @@ function displaySinisterTable()
     return $table . $rows;
 }
 
+function displayCertificationsDashboard(){
+    echo "<div class=\"row\">
+                                <div class=\"col-md-12\">
+                                    <div class=\"row\">
+                                        <div class=\"col-md-4\">
+                                            <div class=\"card\">
+                                                <div class=\"card-header\">
+                                                    <h6>Indicador del mes</h6>
+                                                </div>
+                                                <div class=\"card-body\">
+                                                    <canvas id=\"samplechart\" height=\"250px;\"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=\"col-md-8\">
+                                            <div class=\"card\">
+                                                <div class=\"card-header\">
+                                                    <h6>Certificaciones 2018</h6>
+                                                </div>
+                                                <div class=\"card-body\">
+                                                    <div class=\"chart-wrapper\">
+                                                        <canvas id=\"sample2\" height=\"250px;\"></canvas>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=\"row\">
+                                <div class=\"col-md-12\">
+                                    <div class=\"row\">
+                                        <div class=\"col-md-4\">
+                                            <div class=\"card bg-light\" style=\"min-height: 200px;\">
+                                                <div class=\"card-header\">
+                                                    <h3 style=\"margin-bottom: 0px;\">Certificaciones</h3>
+                                                    <p style=\"margin-bottom: 0px;\">Realizadas</p>
+                                                </div>
+                                                <div class=\"card-body\">
+                                                    <div class=\"cert-count\">
+                                                        1000
+                                                    </div>
+                                                </div>
+                                                <div class=\"card-footer\">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=\"col-md-4\">
+                                            <div class=\"row\">
+                                                <div class=\"col-md-6\">
+                                                    <div class=\"row\">
+                                                        <div class=\"col-md-12\">
+                                                            <div class=\"card bg-light\">
+                                                                <div class=\"card-header card-header-centered\">
+                                                                    <h6>Aprobados</h6>
+                                                                </div>
+                                                                <div class=\"card-body\">
+                                                                    <div class=\"card-counter-sm\">
+                                                                        100
+                                                                    </div>
+                                                                </div>
+                                                                <div class=\"card-footer\"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class=\"row\">
+                                                        <div class=\"col-md-12\">
+                                                            <div class=\"card bg-light\">
+                                                                <div class=\"card-header card-header-centered\">
+                                                                    <h6>Rechazados</h6>
+                                                                </div>
+                                                                <div class=\"card-body\">
+                                                                    <div class=\"card-counter-sm\">
+                                                                        100
+                                                                    </div>
+                                                                </div>
+                                                                <div class=\"card-footer\"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=\"col-md-6\">
+                                                    <div class=\"row\">
+                                                        <div class=\"col-md-12\">
+                                                            <div class=\"card bg-light\">
+                                                                <div class=\"card-header card-header-centered\">
+                                                                    <h6>Declinados</h6>
+                                                                </div>
+                                                                <div class=\"card-body\">
+                                                                    <div class=\"card-counter-sm\">
+                                                                        100
+                                                                    </div>
+                                                                </div>
+                                                                <div class=\"card-footer\"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=\"col-md-4\">
+                                            <div class=\"card bg-light\" style=\"min-height: 200px;\">
+                                                <div class=\"card-header\">
+                                                    <h3 style=\"margin-bottom: 0px;\">Certificaciones</h3>
+                                                    <p style=\"margin-bottom: 0px;\">Pendientes por realizar</p>
+                                                </div>
+                                                <div class=\"card-body\">
+                                                    <div class=\"cert-count-pending\">
+                                                        20
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>";
+}
+
 function newEvent()
 {
     $db = db();
