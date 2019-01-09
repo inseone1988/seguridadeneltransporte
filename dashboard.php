@@ -25,7 +25,8 @@ checkUserIsLoggedIn();
 
     <link href="/seguridadeneltransporte/assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="/seguridadeneltransporte/assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet"/>
-    <link href="/seguridadeneltransporte/node_modules/jquery-datetimepicker/jquery.datetimepicker.css" rel="stylesheet"/>
+    <link href="/seguridadeneltransporte/node_modules/jquery-datetimepicker/jquery.datetimepicker.css"
+          rel="stylesheet"/>
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="/seguridadeneltransporte/assets/demo/demo.css" rel="stylesheet"/>
     <link href="/seguridadeneltransporte/css/styles.css" rel="stylesheet"/>
@@ -585,8 +586,15 @@ checkUserIsLoggedIn();
         vAutocomplete();
         siteAutocomplete();
         clientAutocomplete();
-        chartsample1();
-        chartsample2();
+
+        <?php if (isset($_GET["page"])) {
+        if ($_GET["page"] === "certifications") {
+            echo "
+                chartsample1();
+                chartsample2();
+                ";
+        }
+    } ?>
         providerAutocomplete("vautocpmplete", function (suggestion) {
             $("#person_provider_id").data("provider", suggestion.data);
         });

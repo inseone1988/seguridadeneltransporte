@@ -1,0 +1,10 @@
+[winUpdater]
+	recentlySeenVersion = 2.20.1.windows.1
+[user]
+	email = jimlombriz1988@gmail.com
+	name = Javier Ramirez
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
