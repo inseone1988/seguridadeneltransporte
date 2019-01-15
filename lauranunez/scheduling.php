@@ -44,12 +44,12 @@ checkUserIsLoggedIn();
           Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
       -->
         <div class="logo">
-            <a href="#" class="simple-text logo-mini">
+            <a href="index.php" class="simple-text logo-mini">
                 <div class="logo-image-small">
                     <img src="../img/dhl_icon.png">
                 </div>
             </a>
-            <a href="" class="simple-text logo-normal">
+            <a href="index.php" class="simple-text logo-normal">
                 <?php echo "Laura Nunez";//$_SESSION["auth_username"]; ?>
                 <!-- <div class="logo-image-big">
                   <img src="assets/img/logo-big.png">
@@ -108,12 +108,7 @@ checkUserIsLoggedIn();
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Solicitante</span>
                                         </div>
-                                        <input class="form-control" type="text"/>
-                                        <div class="input-group-append">
-                                            <button class="btn input-group-btn bg-secondary">
-                                                <span class="fa fa-ellipsis-h"></span>
-                                            </button>
-                                        </div>
+                                        <input class="form-control cert-value" data-field="cert_solicitante" type="text"/>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -121,12 +116,7 @@ checkUserIsLoggedIn();
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Area solicitante</span>
                                         </div>
-                                        <input class="form-control" type="text"/>
-                                        <div class="input-group-append">
-                                            <button class="btn input-group-btn bg-secondary">
-                                                <span class="fa fa-ellipsis-h"></span>
-                                            </button>
-                                        </div>
+                                        <input class="form-control cert-value" data-field="cert_area_solicitante" type="text"/>
                                     </div>
                                 </div>
                             </div>
@@ -140,46 +130,47 @@ checkUserIsLoggedIn();
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <label>Nombre de contacto</label>
-                                                    <input type="text" class="form-control form-control-sm"/>
+                                                    <input type="text" data-field="cert_contact_name" class="cert-value form-control form-control-sm"/>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label>Telefono de contacto</label>
-                                                    <input type="text" class="form-control form-control-sm"/>
+                                                    <input type="text" data-field="cert_contact_phone" class="cert-value form-control form-control-sm"/>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label>Correo de contacto</label>
-                                                    <input type="text" class="form-control form-control-sm"/>
+                                                    <input type="text" data-field="cert_contact_mail" class="cert-value form-control form-control-sm"/>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Razon social</label>
-                                                    <input type="text" class="form-control form-control-sm" name=""
+                                                    <input type="text" data-field="cert_transp_social" class="cert-value form-control form-control-sm" name=""
                                                            id="">
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label>Nombre comercial</label>
-                                                    <input type="text" class="form-control form-control-sm"/>
+                                                    <input type="text" data-field="cert_comercial_name" class="cert-value form-control form-control-sm"/>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Direccion :
                                                         <small><a href="javascript:showMap()">Ubicar punto en el mapa</a></small>
+                                                        <input id="cert_coords" type="hidden" class="cert_value" data-field="cert_coords">
                                                     </label>
-                                                    <textarea class="form-control" rows="5"></textarea>
+                                                    <textarea data-field="cert_address" class="form-control cert-value" rows="5"></textarea>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="row">
                                                         <div class="col-md-12">
                                                             <label>Cuenta o sector para el que se solicita la
                                                                 certificacion : </label>
-                                                            <input type="text" class="form-control form-control-sm"
+                                                            <input type="text" data-field="cert_acc_sector" class="cert-value form-control form-control-sm"
                                                                    name="" id=""/>
                                                         </div>
                                                         <div class="col-md-12">
                                                             <label>Motivo del cambio de razon social :</label>
-                                                            <input type="text" class="form-control form-control-sm"
+                                                            <input type="text" data-field="cert_rs_change_reason" class="cert-value form-control form-control-sm"
                                                                    name="" id=""/>
                                                         </div>
                                                     </div>
@@ -194,7 +185,7 @@ checkUserIsLoggedIn();
                         <div class="card-footer">
 
                             <div class="card-footer">
-                                <button class="btn btn-sm" type="button">
+                                <button class="btn btn-sm" type="button" onclick="cert.save()">
                                     <span class="fa fa-save"></span> Guardar
                                 </button>
                             </div>
@@ -238,6 +229,7 @@ checkUserIsLoggedIn();
 <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="../assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS6-LjQnrpEYTErc1Y5Yxh4WOPgk_5KXg&callback=initMap" async defer></script>
+<script src="js/scheduling.js"></script>
 <script>
     var map;
     var marker;
@@ -257,6 +249,7 @@ checkUserIsLoggedIn();
         google.maps.event.addListener(map, 'click', function (event) {
             var point = event.latLng;
             certLocation = point;
+            cert.data.cert_coords = point.lat() + ", " + point.lng();
             $("#mapspoint").val(point.lat() + ", " + point.lng());
             console.log(point);
             if (marker !== undefined) {

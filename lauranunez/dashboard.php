@@ -116,6 +116,9 @@ checkUserIsLoggedIn();
                                             <th>Acciones</th>
                                         </tr>
                                         </thead>
+                                        <tbody id="pending-certifications">
+
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>
@@ -136,8 +139,13 @@ checkUserIsLoggedIn();
 <script src="../node_modules/moment/moment.js"></script>
 <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="../assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
+<script src="js/dashboard.js"></script>
 <script>
-
+    $(document).ready(function () {
+        getPendingCertifications(function () {
+            displayPendingCerts();
+        })
+    })
 </script>
 </body>
 
