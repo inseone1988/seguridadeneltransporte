@@ -75,6 +75,15 @@ function getPendingCerts(){
     }
 }
 
+function getUsernames(){
+    $db = db();
+    $result = $db->select("users",["id","username"]);
+    echo json_encode([
+        "success"=>true,
+        "payload"=>$result
+    ]);
+}
+
 if (isset($_POST["function"])){
     switch ($_POST["function"]){
         case "saveSchedule":
@@ -85,6 +94,9 @@ if (isset($_POST["function"])){
             break;
         case "getPendingCerts":
             getPendingCerts();
+            break;
+        case "getUsernames":
+            getUsernames();
             break;
     }
 }

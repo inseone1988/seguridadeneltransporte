@@ -20,7 +20,7 @@ checkUserIsLoggedIn();
           name='viewport'/>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"/>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
     <!-- CSS Files -->
 
     <link href="/seguridadeneltransporte/assets/css/bootstrap.min.css" rel="stylesheet"/>
@@ -129,6 +129,39 @@ checkUserIsLoggedIn();
         </div>
     </div>
 </div>
+<!-- MODAL -->
+<div id="asign-cert" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Asignacion de certificacion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <label for="cert-request_assigned_to">Asignar a : </label>
+                <select name="cert_request_assigned_to" id="cert_request_assigned_to" class="form-control">
+                </select>
+            </div>
+        </div>
+          <div class="row mt-2">
+              <div class="col-md-8 offset-2">
+                  <label for="cert_request_schedule">Fecha de certificacion : </label>
+                  <input name="cert_request_schedule" id="cert_request_schedule" class="form-control form-control-sm" />
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" onclick="saveScheduling()">Guardar <span class="fa fa-save"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL END -->
 <!--   Core JS Files   -->
 <script src="/seguridadeneltransporte/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../assets/js/core/popper.min.js"></script>
@@ -142,6 +175,7 @@ checkUserIsLoggedIn();
 <script src="js/dashboard.js"></script>
 <script>
     $(document).ready(function () {
+        initdateTiemPicker();
         getPendingCertifications(function () {
             displayPendingCerts();
         })

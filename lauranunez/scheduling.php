@@ -263,7 +263,7 @@ checkUserIsLoggedIn();
     }
 
     $(document).ready(function(){
-
+        cert.getFolio();
     });
 
     function showMap(){
