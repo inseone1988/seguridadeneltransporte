@@ -35,7 +35,14 @@
     }
 
     function redirectToDashboard(){
-        header("Location:/seguridadeneltransporte/dashboard.php?page=sinisters&mode=view");
+        switch ($_SESSION["auth_username"]){
+            case "Laura Nuñez":
+                header("Location:/seguridadeneltransporte/lauranunez");
+                break;
+            default :
+                header("Location:/seguridadeneltransporte/dashboard.php?page=sinisters&mode=view");
+                break;
+        }
     }
 
     function userIsLoggedIn(){

@@ -88,8 +88,16 @@ function displaySinisterTable()
     return $table . $rows;
 }
 
+function pendingCertificationsTotal(){
+    $db = db();
+    $query = "SELECT COUNT(cert_request_status) AS count FROM cert_scheduling WHERE cert_request_status = 0";
+    $result = $db->query($query)->fetchAll(PDO::FETCH_ASSOC);
+    return $result[0]["count"];
+}
+
 function displayCertificationsDashboard(){
-    echo "<div class=\"row\">
+    $total = pendingCertificationsTotal();
+    echo sprintf("<div class=\"row\">
                                 <div class=\"col-md-12\">
                                     <div class=\"row\">
                                         <div class=\"col-md-4\">
@@ -128,8 +136,8 @@ function displayCertificationsDashboard(){
                                                     <p style=\"margin-bottom: 0px;\">Realizadas</p>
                                                 </div>
                                                 <div class=\"card-body\">
-                                                    <div class=\"cert-count\">
-                                                        1000
+                                                    <div id='cert-done-count' class=\"cert-count\">
+                                                        0
                                                     </div>
                                                 </div>
                                                 <div class=\"card-footer\">
@@ -147,8 +155,8 @@ function displayCertificationsDashboard(){
                                                                     <h6>Aprobados</h6>
                                                                 </div>
                                                                 <div class=\"card-body\">
-                                                                    <div class=\"card-counter-sm\">
-                                                                        100
+                                                                    <div id='cert-approved' class=\"card-counter-sm\">
+                                                                        0
                                                                     </div>
                                                                 </div>
                                                                 <div class=\"card-footer\"></div>
@@ -162,8 +170,8 @@ function displayCertificationsDashboard(){
                                                                     <h6>Rechazados</h6>
                                                                 </div>
                                                                 <div class=\"card-body\">
-                                                                    <div class=\"card-counter-sm\">
-                                                                        100
+                                                                    <div id='cert-rejected-count' class=\"card-counter-sm\">
+                                                                        0
                                                                     </div>
                                                                 </div>
                                                                 <div class=\"card-footer\"></div>
@@ -179,8 +187,8 @@ function displayCertificationsDashboard(){
                                                                     <h6>Declinados</h6>
                                                                 </div>
                                                                 <div class=\"card-body\">
-                                                                    <div class=\"card-counter-sm\">
-                                                                        100
+                                                                    <div id='cert-declined-count' class=\"card-counter-sm\">
+                                                                        0
                                                                     </div>
                                                                 </div>
                                                                 <div class=\"card-footer\"></div>
@@ -197,15 +205,16 @@ function displayCertificationsDashboard(){
                                                     <p style=\"margin-bottom: 0px;\">Pendientes por realizar</p>
                                                 </div>
                                                 <div class=\"card-body\">
-                                                    <div class=\"cert-count-pending\">
-                                                        20
+                                                    <div class=\"cert-count-pending\" id='pending_certs'>
+                                                        %s
+                                                        <a href='certifications.php' class='cert-link'>Ver certificaciones pendientes <span class='fa fa-external-link-alt'></span></a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>";
+                            </div>",$total);
 }
 
 function newEvent()

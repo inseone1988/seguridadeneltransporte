@@ -4,6 +4,11 @@ include "utils/AuthManager.php";
 
 checkUserIsLoggedIn();
 */
+
+include "../Sinisters.php";
+include "../utils/AuthManager.php";
+
+checkUserIsLoggedIn();
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +57,7 @@ checkUserIsLoggedIn();
         <div class="sidebar-wrapper">
             <ul class="nav">
                 <li>
-                    <a href="./?function=logout">
+                    <a href="../index.php?function=logout">
                         <i class="nc-icon nc-share-66"></i>
                         <p>Salir</p>
                     </a>

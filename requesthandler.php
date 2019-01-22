@@ -205,6 +205,17 @@ function saveClient($data){
     }
 }
 
+function getPendingcerts(){
+    $db = db();
+    $result = $db->select("cert_scheduling","*");
+    if (!hasError($db->error())){
+        echo json_encode([
+            "success"=>true,
+            "payload"=>$result
+        ]);
+    }
+}
+
 if (isset($_POST["function"])){
     switch ($_POST["function"]){
         case "loadevent":
@@ -247,6 +258,9 @@ if (isset($_POST["function"])){
             break;
         case "saveClient":
             echo json_encode(saveClient($_POST["data"]));
+            break;
+        case "getPendingCerts":
+            getPendingCerts();
             break;
     }
 }

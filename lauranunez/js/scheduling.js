@@ -18,7 +18,7 @@ var cert = {
         cert_request_date : "",
         cert_request_schedule : "",
         cert_request_assigned_to : "",
-        cert_coords :,
+        cert_coords :"",
         cert_request_status_desc : "Captura"
     },
     save : function(){

@@ -84,6 +84,16 @@ function getUsernames(){
     ]);
 }
 
+
+function deleteScheduling(){
+    $db = db();
+    $result = $db->delete("cert_scheduling",["idcert_scheduling"=>$_POST["id"]]);
+    if ($result->rowCount() != 0){
+        echo json_encode([
+            "sucecess"=>true
+        ]);
+    }
+}
 if (isset($_POST["function"])){
     switch ($_POST["function"]){
         case "saveSchedule":
@@ -97,6 +107,9 @@ if (isset($_POST["function"])){
             break;
         case "getUsernames":
             getUsernames();
+            break;
+        case "deleteScheduling":
+            deleteScheduling();
             break;
     }
 }

@@ -166,3 +166,49 @@
 .custom-switch .custom-control-input:disabled:checked~.custom-control-label::before {
     background-color: rgba(0,123,255,.5)
 }
+
+.cert-link{
+    display: block !important;
+    font-size: 0.8rem;
+}
+
+.table thead tr th{
+    font-size: 0.6rem !important;
+}
+
+.table tbody tr td{
+    font-size: 0.8rem;
+}
+
+.cert-info-leg{
+    font-weight: bold;
+
+}
+
+.cert-info-leg span{
+    font-size: 1rem;
+    color: lightseagreen;
+}
+
+.hide{
+    display: none !important;
+}
+
+.no-data-text{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.nomap{
+    text-align: center;
+    position: relative;
+    top: 150px;
+    font-weight: bold;
+    color: #848484;
+}
+.map-wrapper{
+    border: solid 1px #888888;
+}

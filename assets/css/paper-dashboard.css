@@ -5510,7 +5510,7 @@ License - nucleoapp.com/license/
 }
 
 .card .map {
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 
 .card .map.map-big {
